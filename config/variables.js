@@ -20,6 +20,7 @@ module.exports = {
     ogFbAppId: '',
     themeColor: '#ff5500',
     sitemap: domain,
+    canonicalUrl: domain,
   },
   manifest: {
     seed: {
