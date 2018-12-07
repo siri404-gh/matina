@@ -9,7 +9,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const optimization = require('./optimization');
 
-const { navbar: { title, tagline }, seo: { keywords, ogImage, ogImageAlt, ogUrl, ogTitle, ogDescription, ogType, ogFbAppId, themeColor }, adsensePubId, dist, manifest: { seed } } = require('../config/variables');
+const { navbar: { title, tagline }, seo: { keywords, ogImage, ogImageAlt, ogUrl, ogTitle, ogDescription, ogType, ogFbAppId, themeColor, sitemap }, adsensePubId, dist, manifest: { seed } } = require('../config/variables');
 
 module.exports = {
   entry: {
@@ -56,6 +56,12 @@ module.exports = {
       adsensePubId,
       template: path.resolve(__dirname, 'template/template.amp.ejs'),
     }),
+    new HtmlWebpackPlugin({
+      sitemap,
+      filename: 'sitemap.html',
+      inject: false,
+      template: path.resolve(__dirname, 'template/sitemap.html'),
+    }),
     new CleanWebpackPlugin([ dist ], {
       root: path.resolve(__dirname, '../'),
       exclude: [],
@@ -75,7 +81,7 @@ module.exports = {
       filename: './visualizer.html',
     }),
     // new CopyWebpackPlugin([
-    //   // { from: 'webpack/template/favicon.png', to: 'favicon.png' },
+    //   { from: 'webpack/template/sitemap.html', to: 'sitemap.html' },
     //   { from: 'webpack/template/electron.js', to: 'electron.js' },
     // ]),
     new ExtractTextPlugin({ filename: "css/styles.css", allChunks: true }),
