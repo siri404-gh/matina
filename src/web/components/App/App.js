@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
-import './app.less';
+import './app.css';
 
 // Component
 import Navbar from '../Navbar/Navbar';
