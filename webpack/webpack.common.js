@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const Visualizer = require('webpack-visualizer-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ManifestPlugin = require('webpack-manifest-plugin');
 const optimization = require('./optimization');
 
@@ -24,17 +24,14 @@ module.exports = {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, use: { loader: 'babel-loader' } },
       { test: /\.md$/, exclude: /node_modules/, use: { loader: 'raw-loader' } },
-      { test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader",
-        }),
-      },
-      { test: /\.less$/i,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [ 'css-loader', 'less-loader' ],
-        }),
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          "css-loader",
+        ],
       },
       { test: /\.(svg|png|jpg|jpeg|gif|ico)$/, loader: 'file-loader', options: { name: 'img/[name].[ext]' } },
       { test: /\.(woff|woff2|ttf|eot)$/, loader: 'file-loader', options: { name: 'fonts/[name].[ext]' } },
@@ -84,7 +81,12 @@ module.exports = {
     //   { from: 'webpack/template/sitemap.html', to: 'sitemap.html' },
     //   { from: 'webpack/template/electron.js', to: 'electron.js' },
     // ]),
-    new ExtractTextPlugin({ filename: "css/styles.css", allChunks: true }),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "css/[name].css",
+      chunkFilename: "css/[id].css",
+    }),
     new ManifestPlugin({
       seed,
     }),
