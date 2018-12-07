@@ -1,0 +1,34 @@
+# Features
+
+- [x] Webpack Dev
+- [ ] Config
+- [x] Webpack Prod
+- [x] Commitlint
+- [x] Firebase
+- [x] Airbrake
+- [x] Logrocket
+- [ ] Serviceworkers
+- [x] Logo
+- [x] Optimisation
+- [x] Circle CI
+- [x] Manifest
+- [ ] Amp
+- [ ] SEO
+- [ ] Adsense
+- [ ] Analytics
+- [ ] Search
+- [ ] Open Graph
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]

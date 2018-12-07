@@ -1,0 +1,10 @@
+node_modules
+_dist
+.env
+.firebase
+.expo/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
