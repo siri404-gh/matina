@@ -17,7 +17,7 @@ module.exports = {
     ogTitle: title,
     ogDescription: tagline,
     ogType: 'website',
-    ogFbAppId: '',
+    ogFbAppId: '297023651089707',
     themeColor: '#ff5500',
     sitemap: domain,
     canonicalUrl: domain,
