@@ -1,6 +1,6 @@
 const title = 'Sreeram Padmanabhan';
 const shortName = 'Sree';
-const tagline = 'Web Developer, Traveller, Photographer, Chef..';
+const tagline = '📸 Photographer | 👨🏻‍💻 Web Developer | 💼 Solo Traveller | 👨🏼‍🍳 Chef';
 const description = tagline;
 const keywords = 'sreeram, padmanabhan, web, developer, website, solo, travel, photography, cooking';
 const domain = 'https://www.sreeram.app';

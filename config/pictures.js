@@ -1,9 +1,9 @@
 const pictures = [
   {
-    topic: 'Home',
-    route: 'post/home/home',
+    topic: 'Hi, I am Sreeram',
     img: 'https://avatars0.githubusercontent.com/u/8502281?s=460&v=4',
-    post: 'Hey, I am Sreeram Padmanabhan. Some friends call me Sree. I am a Web Developer and this is my photography website. I live in London and am involved in one of the leading banks here. I travel regularly and have so far covered 12 countries in 2 continents. Over my life, I have seen so many things which I would love to share here. Click on the Menu at the top to see my pictures divided into countries and cities. I am also an active in instagram. I try to post regularly at [instagram.sreeram.app](http://instagram.sreeram.app)',
+    post: 'Hey, I am Sreeram Padmanabhan. Some friends call me Sree. I am a Web Developer and this is my photography website. I live in London and am involved in one of the leading banks here. I travel regularly and have so far covered 12 countries in 2 continents. Over my life, I have seen so many things which I would love to share here. Swipe right to see my pictures. I am also an active in instagram. Find me in Instagram at [instagram.sreeram.app](http://instagram.sreeram.app)',
+    route: '',
   },
   {
     topic: 'London Eye reflection',
