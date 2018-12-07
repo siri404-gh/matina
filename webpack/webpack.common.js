@@ -52,7 +52,7 @@ module.exports = {
       canonicalUrl,
       themeColor,
       adsensePubId,
-      template: path.resolve(__dirname, 'template/template.ejs'),
+      template: path.resolve(__dirname, 'template/template.amp.ejs'),
     }),
     new HtmlWebpackPlugin({
       sitemap,
