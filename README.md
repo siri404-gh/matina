@@ -1,7 +1,7 @@
 # Features
 
 - [x] Webpack Dev
-- [ ] Config
+- [x] Config
 - [x] Webpack Prod
 - [x] Commitlint
 - [x] Firebase
@@ -12,12 +12,12 @@
 - [x] Optimisation
 - [x] Circle CI
 - [x] Manifest
-- [ ] Amp
-- [ ] SEO
-- [ ] Adsense
+- [x] Amp
+- [x] SEO
+- [x] Adsense
 - [ ] Analytics
 - [ ] Search
-- [ ] Open Graph
+- [x] Open Graph
 - [ ]
 - [ ]
 - [ ]

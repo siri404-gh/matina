@@ -1,9 +1,9 @@
-const title = 'Title';
-const shortName = 'Short Name';
-const tagline = 'tagline';
+const title = 'Sreeram Padmanabhan';
+const shortName = 'Sree';
+const tagline = 'Web Developer, Traveller, Photographer, Chef..';
 const description = tagline;
-const keywords = 'keyword';
-const domain = '';
+const keywords = 'sreeram, padmanabhan, web, developer, website, solo, travel, photography, cooking';
+const domain = 'https://www.sreeram.app';
 
 module.exports = {
   login: true,
