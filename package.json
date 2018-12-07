@@ -11,7 +11,7 @@
     "lint": "eslint src/*",
     "server:start": "nodemon server/",
     "electron:start": "electron dist/electron.js",
-    "build:firebase": "webpack --env=prod --config=webpack/webpack.config.js",
+    "build:firebase:stage": "webpack --env=prod --config=webpack/webpack.config.js",
     "build:firebase:prod": "webpack --env=firebase-prod --config=webpack/webpack.config.js",
     "firebase:deploy:staging": "cd functions && npm i && cd .. && firebase use staging && firebase deploy --token $FIREBASE_TOKEN",
     "firebase:deploy:prod": "cd functions && npm i && cd .. && firebase use production && firebase deploy --token $FIREBASE_TOKEN"
