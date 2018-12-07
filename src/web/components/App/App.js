@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { hot } from 'react-hot-loader';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
 import './app.css';
 
 // Component
-import Navbar from '../Navbar/Navbar';
+// import Navbar from '../Navbar/Navbar';
 import Tabs from '../Tabs/Tabs';
 // Config
 import variables from '../../../../config/variables';
@@ -35,4 +34,4 @@ class App extends Component {
   }
 }
 
-export default hot(module)(withStyles(styles)(App));
+export default withStyles(styles)(App);
