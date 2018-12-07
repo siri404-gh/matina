@@ -6,7 +6,7 @@ const keywords = 'sreeram, padmanabhan, web, developer, website, solo, travel, p
 const domain = 'https://www.sreeram.app';
 
 module.exports = {
-  login: true,
+  login: false,
   seo: {
     title,
     description,
