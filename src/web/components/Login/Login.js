@@ -6,7 +6,7 @@ import LoadingIndicator from '../LoadingIndicator/LoadingIndicator';
 import { connect } from 'react-redux';
 import { setAppIsLoading } from '../../../data/app/appActions';
 
-const { firebaseConfig } = require('../../../../config/variables');
+const { login, firebaseConfig } = require('../../../../config/variables');
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const delay = 1000;
 
@@ -27,6 +27,7 @@ class Login extends React.Component {
   };
 
   componentDidMount() {
+    if(!login) this.props.history.push('/app');
     const { setAppIsLoading } = this.props;
     this.unregisterAuthObserver = firebaseApp.auth().onAuthStateChanged((user) => {
       this.setState({ isSignedIn: !!user });
