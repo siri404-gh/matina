@@ -16,10 +16,10 @@ export default class ErrorBoundary extends React.Component {
   }
   initialiseLogRocket() {
     LogRocket.init(process.env.LOGROCKET_ID);
-    LogRocket.identify('1', {
-      name: 'Sreeram Padmanabhan',
-      email: 'sreeram.com@gmail.com',
-    });
+    // LogRocket.identify('1', {
+    //   name: 'Sreeram Padmanabhan',
+    //   email: 'sreeram.com@gmail.com',
+    // });
     setupLogRocketReact(LogRocket);
   }
   initialiseAirbrake() {
