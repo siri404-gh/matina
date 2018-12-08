@@ -10,6 +10,7 @@ const styles = theme => ({
   paragraph: {
     fontWeight: theme.typography.fontWeightLight,
     textAlign: 'justify',
+    padding: 10,
   },
   padding: {
     padding: 10,
@@ -26,7 +27,7 @@ const renderers = {
         variant = 'display1';
         break;
       case 2:
-        variant = 'title';
+        variant = 'h6';
         break;
       case 3:
         variant = 'subheading';
@@ -47,11 +48,11 @@ const renderers = {
       <Typography component="span" {...props} />
     </li>
   )),
-  paragraph: withStyles(styles)(({ classes, tight, ordered, ...props }) => <Typography {...props} paragraph className={[ classes.paragraph, classes.padding ]} />),
+  paragraph: withStyles(styles)(({ classes, tight, ordered, ...props }) => <Typography {...props} paragraph className={classes.paragraph} />),
 };
 
 export default props => <div>
-    <Typography variant={'title'} style={{ padding: 10, paddingBottom: 0 }}>{props.title}</Typography>
+    <Typography variant={'h6'} style={{ padding: 10, paddingBottom: 0 }}>{props.title}</Typography>
     <Typography variant={'caption'} style={{ padding: 10, paddingBottom: 0 }}>{props.caption}</Typography>
     <ReactMarkdown renderers={renderers} {...props} />
   </div>;
