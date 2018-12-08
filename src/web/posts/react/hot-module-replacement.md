@@ -1,4 +1,4 @@
-# 8.3 React Hot module replacement
+# React Hot module replacement
 
 #### Sep 1, 2018 by Sreeram Padmanabhan, Last updated on Sep 13, 2018
 

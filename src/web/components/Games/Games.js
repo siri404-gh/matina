@@ -8,7 +8,7 @@ const {
   navbar: { title, tagline, tabs, search },
 } = require('../../../../config/variables');
 
-import topics from '../../../../config/topics';
+import games from '../../../../config/games';
 
 class Gallery extends Component {
   state = {
@@ -29,7 +29,7 @@ class Gallery extends Component {
       <Sidebar
         mobileOpen={this.state.mobileOpen}
         handleDrawerToggle={this.handleDrawerToggle.bind(this)}
-        topics={topics}/>
+        topics={games}/>
       <Content topic={topic} post={post}/>
     </div>;
   }

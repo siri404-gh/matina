@@ -1,4 +1,4 @@
-# 3.1 Closures in Javascript
+# Closures in Javascript
 
 #### Sep 18, 2018 by Sreeram Padmanabhan
 

@@ -1,4 +1,4 @@
-# 3.4 Aync/Await
+# Aync/Await
 
 #### Sep 21, 2018 by Sreeram Padmanabhan
 

@@ -16,9 +16,9 @@ export default theme => ({
   menuIcon: {
   },
   navIconHide: {
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
-    },
+    // [theme.breakpoints.up('md')]: {
+    //   display: 'none',
+    // },
   },
   flex: {
     flexGrow: 1,

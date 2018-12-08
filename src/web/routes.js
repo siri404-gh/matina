@@ -10,7 +10,7 @@ const Gallery = lazy(() => import('./components/Gallery/Gallery'));
 const About = lazy(() => import('./components/About/About'));
 const App = lazy(() => import('./components/App/App'));
 const Blog = lazy(() => import('./components/Blog/Blog'));
-
+const Games = lazy(() => import('./components/Games/Games'));
 const Routes = () => <Router>
   <Provider store={store}>
     <Suspense fallback={<FullpageLoader />}>
@@ -20,6 +20,7 @@ const Routes = () => <Router>
           <Route path="/gallery" component={Gallery} />
           <Route path="/about" component={About} />
           <Route path="/blog" component={Blog} />
+          <Route path="/games" component={Games} />
           <Route path="/post/:topic/:post" component={Blog} />
         </App>
       </Switch>

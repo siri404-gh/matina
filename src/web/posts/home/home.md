@@ -1,17 +1,3 @@
-# Web Boilerplate Project
-
-#### Sep 1, 2018 by Sreeram Padmanabhan, Last updated on Sep 13, 2018
-
-![Sreeram Padmanabhan](https://avatars0.githubusercontent.com/u/8502281?s=460&v=4 "Sreeram Padmanabhan")
-
-Hey, I am Sreeram Padmanabhan. Some friends call me Sree. I am a Web Developer and this is my Web Boilerplate project. Its a comprehensive tutorial on how to create your own website from scratch. This website will be performant, will look pleasing, will be responsive, accessible and will be search engine optimised. It will use the latest web technologies which most enterprise companies use today.
-
-At the end of this tutorial, you will have a boilerplate project from which you can build any application you want and deploy to the Web, Mobile or even as a Desktop app with zero or minimal configuration. Infact, this very website was made using the boilerplate. Navigate through the links in the left sidebar to learn more about each topic.
-
-## What you need to know
-
-You need to the basics of Web Development like HTML, CSS, Javascript, Git, Unix etc. Also, follow the chapters in the left in the given order for best results.
-
 ## What you will learn
 
 You will start with some cool concepts of HTML CSS and Javascript. You will then learn all about creating your own Development environment, writing your first line of code, following good practices, writing unit tests, automation tests, deployment to staging/production and monitoring.

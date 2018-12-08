@@ -1,4 +1,4 @@
-# 7.2 Configure Editorconfig
+# Configure Editorconfig
 
 #### Sep 1, 2018 by Sreeram Padmanabhan, Last updated on Sep 13, 2018
 

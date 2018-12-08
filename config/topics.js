@@ -1,9 +1,5 @@
 module.exports = [
   {
-    topic: 'Home',
-    route: '/',
-  },
-  {
     topic: 'Javascript Concepts',
     route: [{
       topic: 'Closures in Javascript',

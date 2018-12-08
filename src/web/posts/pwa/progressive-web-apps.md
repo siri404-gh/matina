@@ -1,4 +1,4 @@
-# 17.2 Progressive Web App
+# Progressive Web App
 
 ## Service worker caching
 

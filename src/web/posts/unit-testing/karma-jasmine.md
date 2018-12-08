@@ -1,4 +1,4 @@
-# 15.1 Unit testing using Karma, Jasmine
+# Unit testing using Karma, Jasmine
 
 #### Sep 20, 2018 by Sreeram Padmanabhan
 

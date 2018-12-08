@@ -1,4 +1,4 @@
-# 9.9 Webpack Hot Module Replacement
+# Webpack Hot Module Replacement
 
 #### Sep 2, 2018 by Sreeram Padmanabhan, Last updated on Sep 14, 2018
 

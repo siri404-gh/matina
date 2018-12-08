@@ -1,4 +1,4 @@
-# 3.2 Callback Hell
+# Callback Hell
 
 #### Sep 16, 2018 by Sreeram Padmanabhan
 

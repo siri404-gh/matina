@@ -7,11 +7,10 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { NavLink } from 'react-router-dom';
 import styles from './styles';
-import topics from '../../../../config/topics';
 
 class Sidebar extends React.Component {
   render() {
-    const { classes, theme } = this.props;
+    const { classes, theme, topics } = this.props;
 
     const drawer = <div>
       {topics.map((topic, i) => {

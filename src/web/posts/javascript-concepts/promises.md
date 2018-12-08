@@ -1,4 +1,4 @@
-# 3.3 Promises
+# Promises
 
 #### Sep 16, 2018 by Sreeram Padmanabhan
 

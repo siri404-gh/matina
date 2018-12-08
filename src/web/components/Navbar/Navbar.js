@@ -77,25 +77,15 @@ class Navbar extends React.Component {
             className={classes.navIconHide}>
             <MenuIcon className={classes.menuIcon} />
           </IconButton>
-          <Hidden xsDown>
-            <Typography variant="title" color="textSecondary" className={classes.flex} noWrap>
-              {title}
-            </Typography>
-            <Typography variant="subheading" color="inherit" className={classes.italics} noWrap>
-              {tagline}
-            </Typography>
-          </Hidden>
-          {this.props.tabs && <Hidden smDown implementation="css">
-            <Tabs
-              value={value}
-              onChange={this.handleChange.bind(this)}
-              indicatorColor="primary"
-              textColor="primary"
-              classes={{ root: classes.tabsRoot, indicator: classes.tabsIndicator }}>
-              {this.props.tabs.map((tab, i) => <Tab key={i} label={tab} classes={{ root: classes.tabRoot, selected: classes.tabSelected }} />)}
-            </Tabs>
-          </Hidden>}
-          <div className={classes.googleSearch} dangerouslySetInnerHTML={{ __html: '<gcse:searchbox-only></gcse:searchbox-only>' }} />
+          <Typography variant="title" color="textSecondary" className={classes.flex} noWrap>
+            {title}
+          </Typography>
+          <Typography variant="subheading" color="inherit" className={classes.italics} noWrap>
+            {tagline}
+          </Typography>
+          {/* <Hidden smUp>
+            <div className={classes.googleSearch} dangerouslySetInnerHTML={{ __html: '<gcse:searchbox-only></gcse:searchbox-only>' }} />
+          </Hidden> */}
           {auth &&
             <div>
               <IconButton
