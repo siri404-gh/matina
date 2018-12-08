@@ -22,8 +22,8 @@ class App extends Component {
       <MuiThemeProvider theme={theme}>
         <div id="app" className={classes.app}>
           {children}
-          <Footer handleTabChange={this.handleTabChange.bind(this)} activeTab={this.state.activeTab}/>
         </div>
+        <Footer handleTabChange={this.handleTabChange.bind(this)} activeTab={this.state.activeTab}/>
       </MuiThemeProvider>
     );
   }
