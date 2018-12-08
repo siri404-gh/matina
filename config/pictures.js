@@ -8,7 +8,7 @@ const pictures = [
   {
     topic: 'London Eye reflection',
     img: 'https://scontent-lht6-1.cdninstagram.com/vp/9b812a9fd10fda486e708897ad23ee8e/5CAAC895/t51.2885-15/sh0.08/e35/s640x640/46661579_315020706001288_8007834998523697977_n.jpg',
-    post: 'My first try on some reflection photography yesterday.. its amazing what the iPhone can capture.. ',
+    post: 'Its amazing what the iPhone can capture.. I dropped a good friend of mine at Victoria Coach station and had the entire night for myself. Westminster was just on the way and I decided to get out of the tube and see where they have reached with the renovation of the big ben. Looks ike the big ben wont be ready for this new year. And so I went on the to westminster pier to take some pictures of the eye. And then, I saw a hole in the wall with stagnant rain water.. ',
     route: '',
   },
   {
