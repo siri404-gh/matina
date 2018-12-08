@@ -197,12 +197,12 @@ const pictures = [
     post: '',
     route: '',
   },
-  // {
-  //   topic: 'topic',
-  //   img: 'img',
-  //   post: '',
-  //   route: '',
-  // },
+  {
+    topic: 'Arthur\'s seat, Edinburgh',
+    img: 'https://scontent-lht6-1.cdninstagram.com/vp/71bc7ede6ddecd6aef96af3e87701780/5C98CA34/t51.2885-15/sh0.08/e35/c1.0.1078.1078/s640x640/26073080_153733438608515_8519159814499074048_n.jpg',
+    post: '',
+    route: '',
+  },
   // {
   //   topic: 'topic',
   //   img: 'img',

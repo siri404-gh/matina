@@ -60,8 +60,8 @@ class FullWidthTabs extends React.Component {
             // const post = require(`../../${picture.route}.md`);
             return <div key={i}>
               <amp-img src={picture.img} alt={picture.topic} title={picture.topic} height="640" width="640" layout="responsive"></amp-img>
-              <Markdown dir={theme.direction} className={classes.markdown} title={picture.topic} caption={'Dec 1, 2018 by Sreeram Padmanabhan'} key={picture.route.substring(0, 40)+Math.random()}>
-                {picture.post}
+              <Markdown dir={theme.direction} className={classes.markdown} title={`${picture.topic}`} caption={'Dec 1, 2018 by Sreeram Padmanabhan'} key={picture.route.substring(0, 40)+Math.random()}>
+                {`${picture.post} (${i+1}/${pictures.length}) `}
               </Markdown>
             </div>;
           })}
