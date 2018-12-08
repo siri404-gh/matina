@@ -5,14 +5,14 @@
  */
 export default theme => ({
   app: {
-    maxWidth: 800,
+    maxWidth: 1000,
     margin: 'auto',
-    flexGrow: 1,
+    // flexGrow: 1,
     minHeight: 440,
     zIndex: 1,
     overflow: 'hidden',
     position: 'relative',
-    display: 'flex',
+    // display: 'flex',
     width: '100%',
   },
 });

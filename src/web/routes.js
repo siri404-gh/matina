@@ -11,6 +11,7 @@ const About = lazy(() => import('./components/About/About'));
 const App = lazy(() => import('./components/App/App'));
 const Blog = lazy(() => import('./components/Blog/Blog'));
 const Games = lazy(() => import('./components/Games/Games'));
+
 const Routes = () => <Router>
   <Provider store={store}>
     <Suspense fallback={<FullpageLoader />}>

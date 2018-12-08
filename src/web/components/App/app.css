@@ -6,10 +6,11 @@
   padding: 3px 3px !important;
 }
 
-img {
+img, amp-img {
   width: 100%;
   max-width: 700px;
   overflow: hidden;
+  margin: auto;
 }
 
 img[title='closures-case-1-before'], img[title='closures-case-1-after'], img[title='closures-case-2'], img[title='closures-case-3-before'], img[title='closures-case-3-after'] {

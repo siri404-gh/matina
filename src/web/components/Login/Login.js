@@ -26,8 +26,11 @@ class Login extends React.Component {
     isSignedIn: undefined,
   };
 
-  componentDidMount() {
+  componentWillMount() {
     if(!login) this.props.history.push('/gallery');
+  }
+
+  componentDidMount() {
     const { setAppIsLoading } = this.props;
     this.unregisterAuthObserver = firebaseApp.auth().onAuthStateChanged((user) => {
       this.setState({ isSignedIn: !!user });
