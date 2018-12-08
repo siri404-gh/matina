@@ -6,14 +6,22 @@ import store from '../data/store/store';
 import FullpageLoader from './components/FullpageLoader/FullpageLoader';
 
 const Login = lazy(() => import('./components/Login/Login'));
+const Gallery = lazy(() => import('./components/Gallery/Gallery'));
+const About = lazy(() => import('./components/About/About'));
 const App = lazy(() => import('./components/App/App'));
+const Blog = lazy(() => import('./components/Blog/Blog'));
 
 const Routes = () => <Router>
   <Provider store={store}>
     <Suspense fallback={<FullpageLoader />}>
       <Switch>
         <Route exact path="/" component={Login} />
-        <Route exact path="/app" component={App} />
+        <App>
+          <Route path="/gallery" component={Gallery} />
+          <Route path="/about" component={About} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/post/:topic/:post" component={Blog} />
+        </App>
       </Switch>
     </Suspense>
   </Provider>

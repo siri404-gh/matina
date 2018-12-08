@@ -27,7 +27,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-113469131-2');
+    gtag('config', '<%= htmlWebpackPlugin.options.googleAnalyticsId %>');
   </script>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script type="application/ld+json">
@@ -49,6 +49,7 @@
             enable_page_level_ads: true
       });
   </script>
+  <script async type='text/javascript' src='https://cse.google.com/cse.js?cx=<%= htmlWebpackPlugin.options.googleSearchbarId %>'></script>
 </head>
 <body>
   <amp-auto-ads type="adsense" data-ad-client="<%= htmlWebpackPlugin.options.adsensePubId %>"></amp-auto-ads>

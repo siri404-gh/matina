@@ -7,7 +7,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import pictures from '../../../../config/pictures';
 import Markdown from './Markdown';
 
 function TabContainer({ children, dir }) {
@@ -33,7 +32,6 @@ const styles = theme => ({
 class FullWidthTabs extends React.Component {
   state = {
     value: 0,
-    img: pictures[0].img,
   };
 
   handleChange = (event, value) => {
@@ -41,12 +39,11 @@ class FullWidthTabs extends React.Component {
   };
 
   handleChangeIndex = index => {
-    this.setState({ img: '' });
-    setTimeout(() => this.setState({ value: index, img: pictures[index].img }), 0);
+    this.setState({ value: index });
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes, theme, pictures } = this.props;
 
     return (
       <div className={classes.root}>

@@ -62,4 +62,6 @@ module.exports = {
     messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
   },
   adsensePubId: 'ca-pub-6831276331714408',
+  googleSearchbarId: 'partner-pub-6831276331714408:3209356504',
+  googleAnalyticsId: 'UA-113469131-2',
 };

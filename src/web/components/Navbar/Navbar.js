@@ -5,7 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Avatar from '@material-ui/core/Avatar';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
@@ -14,6 +13,12 @@ import Tab from '@material-ui/core/Tab';
 import Hidden from '@material-ui/core/Hidden';
 import styles from './styles';
 
+/**
+ *
+ *
+ * @class Navbar
+ * @extends {React.Component}
+ */
 class Navbar extends React.Component {
   state = {
     auth: false,
@@ -21,43 +26,65 @@ class Navbar extends React.Component {
     value: 0,
   };
 
+  /**
+   *
+   *
+   * @param {*} event
+   * @memberof Navbar
+   */
   handleMenu(event) {
     this.setState({ anchorEl: event.currentTarget });
   }
 
+  /**
+   *
+   *
+   * @param {*} event
+   * @param {*} value
+   * @memberof Navbar
+   */
   handleChange(event, value) {
     this.setState({ value });
   }
 
+  /**
+   *
+   *
+   * @memberof Navbar
+   */
   handleClose() {
     this.setState({ anchorEl: null });
   }
 
+  /**
+   *
+   *
+   * @return {Component}
+   * @memberof Navbar
+   */
   render() {
     const { classes, title = '', tagline = '' } = this.props;
-    const { value } = this.state;
+    const { auth, anchorEl, value } = this.state;
+    const open = Boolean(anchorEl);
 
     return (
       <AppBar id="bp-navbar" className={classes.appBar}>
         <Toolbar className={classes.toolBar}>
-          <IconButton color="inherit" className={classes.iconButtonAvatar}>
-            <Avatar className={classes.avatar} src={'/img/logo-192.png'} />
-          </IconButton>
-          {/* <IconButton
+          <IconButton
             color="inherit"
             aria-label="Open drawer"
             onClick={this.props.handleDrawerToggle}
             className={classes.navIconHide}>
             <MenuIcon className={classes.menuIcon} />
-          </IconButton> */}
-          {/* <Hidden xsDown> */}
-          <Typography variant="title" color="textSecondary" className={classes.flex} noWrap>
-            {title}
-          </Typography>
-          {/* <Typography variant="subheading" color="inherit" className={classes.italics} noWrap>
-            {tagline}
-          </Typography> */}
-          {/* </Hidden> */}
+          </IconButton>
+          <Hidden xsDown>
+            <Typography variant="title" color="textSecondary" className={classes.flex} noWrap>
+              {title}
+            </Typography>
+            <Typography variant="subheading" color="inherit" className={classes.italics} noWrap>
+              {tagline}
+            </Typography>
+          </Hidden>
           {this.props.tabs && <Hidden smDown implementation="css">
             <Tabs
               value={value}
@@ -68,7 +95,34 @@ class Navbar extends React.Component {
               {this.props.tabs.map((tab, i) => <Tab key={i} label={tab} classes={{ root: classes.tabRoot, selected: classes.tabSelected }} />)}
             </Tabs>
           </Hidden>}
-          {/* {this.props.search && <div className={classes.googleSearch} dangerouslySetInnerHTML={{ __html: '<gcse:searchbox-only></gcse:searchbox-only>' }} />} */}
+          <div className={classes.googleSearch} dangerouslySetInnerHTML={{ __html: '<gcse:searchbox-only></gcse:searchbox-only>' }} />
+          {auth &&
+            <div>
+              <IconButton
+                aria-owns={open ? 'menu-appbar' : null}
+                aria-haspopup="true"
+                onClick={this.handleMenu.bind(this)}
+                color="inherit">
+                <AccountCircle />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={open}
+                onClose={() => this.handleClose()}>
+                <MenuItem onClick={this.handleClose.bind(this)}>Profile</MenuItem>
+                <MenuItem onClick={this.handleClose.bind(this)}>My account</MenuItem>
+              </Menu>
+            </div>
+          }
         </Toolbar>
       </AppBar>
     );

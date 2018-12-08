@@ -8,9 +8,9 @@ export default theme => ({
     zIndex: theme.zIndex.drawer + 1,
     color: '#8c8c8c',
     backgroundColor: '#ffffff',
-    height: 48,
   },
   toolBar: {
+    minHeight: 1,
     marginLeft: window.innerWidth < 600 ? -20 : -10,
   },
   menuIcon: {
@@ -53,8 +53,5 @@ export default theme => ({
     maxWidth: 400,
     marginTop: 3,
     // marginLeft: -5,
-  },
-  iconButtonAvatar: {
-    marginLeft: 5,
   },
 });

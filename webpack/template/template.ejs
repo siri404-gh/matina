@@ -33,8 +33,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-113469131-2');
+    gtag('config', '<%= htmlWebpackPlugin.options.googleAnalyticsId %>');
   </script>
+  <script async type='text/javascript' src='https://cse.google.com/cse.js?cx=<%= htmlWebpackPlugin.options.googleSearchbarId %>'></script>
 </head>
 <body>
   <noscript>

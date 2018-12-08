@@ -3,12 +3,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import Routes from './routes';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
-
-import './assets/favicon.ico';
-import './assets/logo.png';
-import './assets/logo-192.png';
-import './assets/logo-512.png';
-import './assets/og_image.jpg';
+import './includes';
 
 const isProd = process.env.NODE_ENV === 'production';
 const component = isProd ? <ErrorBoundary><Routes /></ErrorBoundary> : <Routes />;

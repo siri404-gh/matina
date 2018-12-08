@@ -1,37 +1,32 @@
 import React, { Component } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
+import { withRouter } from "react-router";
 import './app.css';
-
-// Component
-// import Navbar from '../Navbar/Navbar';
-import Tabs from '../Tabs/Tabs';
-// Config
-import variables from '../../../../config/variables';
+import Footer from '../Footer/Footer';
 import styles from './styles';
 import theme from './theme';
 
-const {
-  navbar: { title, tagline, tabs, search },
-} = variables;
-
 class App extends Component {
+  state = {
+    activeTab: 'gallery',
+  }
+  handleTabChange(value) {
+    this.setState({ activeTab: value });
+    this.props.history.push(`/${value}`);
+  }
   render() {
-    const { classes } = this.props;
+    const { classes, children } = this.props;
 
     return (
       <MuiThemeProvider theme={theme}>
         <div id="app" className={classes.app}>
-          {/* <Navbar
-            title={title}
-            tagline={tagline}
-            tabs={tabs}
-            search={search} /> */}
-          <Tabs />
+          {children}
+          <Footer handleTabChange={this.handleTabChange.bind(this)} activeTab={this.state.activeTab}/>
         </div>
       </MuiThemeProvider>
     );
   }
 }
 
-export default withStyles(styles)(App);
+export default withRouter(withStyles(styles)(App));
