@@ -27,7 +27,7 @@ class Login extends React.Component {
   };
 
   componentWillMount() {
-    if(!login) this.props.history.push('/gallery');
+    if(!login) this.props.history.push('/about');
   }
 
   componentDidMount() {

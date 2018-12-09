@@ -1,10 +1,5 @@
 const drawerWidth = 275;
 
-/**
- *
- * @param {string} theme
- * @return {Object}
- */
 export default theme => ({
   toolbar: {
     minHeight: 48,

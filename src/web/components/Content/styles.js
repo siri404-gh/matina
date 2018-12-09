@@ -1,8 +1,5 @@
-/**
- *
- * @param {string} theme
- * @return {Object}
- */
+/* eslint-disable no-magic-numbers */
+
 export default theme => ({
   root: {
     ...theme.mixins.gutters(),

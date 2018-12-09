@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
 import { withRouter } from "react-router";
-import './app.css';
+
 import Footer from '../Footer/Footer';
 import styles from './styles';
 import theme from './theme';
+import './app.css';
 
 class App extends Component {
   state = {
-    activeTab: 'gallery',
+    activeTab: 'about',
   }
   handleTabChange(value) {
     this.setState({ activeTab: value });
@@ -23,7 +24,9 @@ class App extends Component {
         <div id="app" className={classes.app}>
           {children}
         </div>
-        <Footer handleTabChange={this.handleTabChange.bind(this)} activeTab={this.state.activeTab}/>
+        <Footer
+          handleTabChange={this.handleTabChange.bind(this)}
+          activeTab={this.state.activeTab} />
       </MuiThemeProvider>
     );
   }

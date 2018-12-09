@@ -64,8 +64,8 @@ class Navbar extends React.Component {
    */
   render() {
     const { classes, title = '', tagline = '' } = this.props;
-    const { auth, anchorEl, value } = this.state;
-    const open = Boolean(anchorEl);
+    // const { auth, anchorEl } = this.state;
+    // const open = Boolean(anchorEl);
 
     return (
       <AppBar id="bp-navbar" className={classes.appBar}>
@@ -86,7 +86,7 @@ class Navbar extends React.Component {
           {/* <Hidden smUp>
             <div className={classes.googleSearch} dangerouslySetInnerHTML={{ __html: '<gcse:searchbox-only></gcse:searchbox-only>' }} />
           </Hidden> */}
-          {auth &&
+          {/* {auth &&
             <div>
               <IconButton
                 aria-owns={open ? 'menu-appbar' : null}
@@ -112,7 +112,7 @@ class Navbar extends React.Component {
                 <MenuItem onClick={this.handleClose.bind(this)}>My account</MenuItem>
               </Menu>
             </div>
-          }
+          } */}
         </Toolbar>
       </AppBar>
     );

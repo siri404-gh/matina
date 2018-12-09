@@ -2,7 +2,6 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import Hidden from "@material-ui/core/Hidden";
 
 const styles = theme => ({
   listItem: {
@@ -11,7 +10,7 @@ const styles = theme => ({
   paragraph: {
     fontWeight: theme.typography.fontWeightLight,
     textAlign: 'justify',
-  }
+  },
 });
 
 const renderers = {
@@ -21,36 +20,34 @@ const renderers = {
     let paragraph;
 
     switch (level) {
-      case 1:
-        variant = 'h6';
-        break;
-      case 2:
-        variant = 'h6';
-        break;
-      case 3:
-        variant = 'subheading';
-        break;
-      case 4:
-        variant = 'caption';
-        // paragraph = true;
-        break;
-      default:
-        variant = 'body';
-        break;
+    case 1:
+      variant = 'h6';
+      break;
+    case 2:
+      variant = 'h6';
+      break;
+    case 3:
+      variant = 'subheading';
+      break;
+    case 4:
+      variant = 'caption';
+      // paragraph = true;
+      break;
+    default:
+      variant = 'body';
+      break;
     }
 
     return <Typography {...props} gutterBottom variant={variant} paragraph={paragraph} />;
   },
-  listItem: withStyles(styles)(({ classes, tight, ordered, ...props }) => (
-    <li className={classes.listItem}>
+  listItem: withStyles(styles)(({ classes, tight, ordered, ...props }) => <li className={classes.listItem}>
       <Typography component="span" {...props} />
     </li>
-  )),
-  paragraph: withStyles(styles)(({ classes, tight, ordered, ...props }) => <Typography {...props} paragraph className={classes.paragraph}/>),
+  ),
+  paragraph: withStyles(styles)(({ classes, tight, ordered, ...props }) => <Typography {...props} paragraph className={classes.paragraph} />),
 };
 
-export default props => (
-  <div>
+export default props => <div style={{ paddingBottom: 40 }} >
     <ReactMarkdown renderers={renderers} {...props} />
   </div>
-);
+;

@@ -46,7 +46,7 @@ module.exports = {
   },
   navbar: {
     title,
-    tagline,
+    tagline: '👨🏻‍💻📸 💼 👨🏼‍🍳 ',
   },
   ports: {
     wdsPort: 9000,
