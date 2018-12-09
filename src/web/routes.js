@@ -5,12 +5,19 @@ import { Provider } from 'react-redux';
 import store from '../data/store/store';
 import FullpageLoader from './components/FullpageLoader/FullpageLoader';
 
-const Login = lazy(() => import('./components/Login/Login'));
-const Gallery = lazy(() => import('./components/Gallery/Gallery'));
+// const Login = lazy(() => import('./components/Login/Login'));
+// const Gallery = lazy(() => import('./components/Gallery/Gallery'));
+// const App = lazy(() => import('./components/App/App'));
 const About = lazy(() => import('./components/About/About'));
-const App = lazy(() => import('./components/App/App'));
 const Blog = lazy(() => import('./components/Blog/Blog'));
 const Games = lazy(() => import('./components/Games/Games'));
+
+import App from './components/App/App';
+import Login from './components/Login/Login';
+import Gallery from './components/Gallery/Gallery';
+// import About from './components/About/About';
+// import Blog from './components/Blog/Blog';
+// import Games from './components/Games/Games';
 
 const Routes = () => <Router>
   <Provider store={store}>
