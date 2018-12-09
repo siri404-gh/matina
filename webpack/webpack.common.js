@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const Visualizer = require('webpack-visualizer-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ManifestPlugin = require('webpack-manifest-plugin');
 const optimization = require('./optimization');
@@ -78,10 +78,10 @@ module.exports = {
     new Visualizer({
       filename: './visualizer.html',
     }),
-    // new CopyWebpackPlugin([
-    //   { from: 'webpack/template/sitemap.html', to: 'sitemap.html' },
-    //   { from: 'webpack/template/electron.js', to: 'electron.js' },
-    // ]),
+    new CopyWebpackPlugin([
+      // { from: 'webpack/template/sitemap.html', to: 'sitemap.html' },
+      { from: 'webpack/template/electron.js', to: 'electron.js' },
+    ]),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional

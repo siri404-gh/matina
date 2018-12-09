@@ -12,5 +12,5 @@ app.on('ready', function () {
   });
   mainWindow.loadURL('https://www.sreeram.app');
   mainWindow.focus();
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 });
