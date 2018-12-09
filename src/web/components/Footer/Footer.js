@@ -6,7 +6,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import FaceIcon from '@material-ui/icons/Face';
 import WebIcon from '@material-ui/icons/Web';
-// import GamesIcon from '@material-ui/icons/Games';
+import GamesIcon from '@material-ui/icons/Games';
 
 const styles = {
   root: {
@@ -36,7 +36,7 @@ class LabelBottomNavigation extends React.Component {
         <BottomNavigationAction label="About me" value="about" icon={<FaceIcon />} />
         <BottomNavigationAction label="Travelogue" value="gallery" icon={<PhotoLibraryIcon />} />
         <BottomNavigationAction label="Blog" value="blog" icon={<WebIcon />} />
-        {/* <BottomNavigationAction label="Games" value="games" icon={<GamesIcon />} /> */}
+        <BottomNavigationAction label="Luckmeter" value="luckmeter" icon={<GamesIcon />} />
       </BottomNavigation>
     );
   }

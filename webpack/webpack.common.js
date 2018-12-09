@@ -25,12 +25,11 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, use: { loader: 'babel-loader' } },
       { test: /\.md$/, exclude: /node_modules/, use: { loader: 'raw-loader' } },
       {
-        test: /\.css$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          "css-loader",
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
         ],
       },
       { test: /\.(svg|png|jpg|jpeg|gif|ico)$/, loader: 'file-loader', options: { name: 'img/[name].[ext]' } },

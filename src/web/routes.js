@@ -11,6 +11,7 @@ import Login from './components/Login/Login';
 const Gallery = lazy(() => import('./components/Gallery/Gallery'));
 const About = lazy(() => import('./components/About/About'));
 const Blog = lazy(() => import('./components/Blog/Blog'));
+const Luckmeter = lazy(() => import('./components/Luckmeter/Luckmeter'));
 
 // import Gallery from './components/Gallery/Gallery';
 // import Blog from './components/Blog/Blog';
@@ -26,6 +27,7 @@ const Routes = () => <Router>
           <Route path="/blog" component={Blog} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/about" component={About} />
+          <Route path="/luckmeter" component={Luckmeter} />
           <Route path="/post/:topic/:post" component={Blog} />
         </App>
       </Switch>
