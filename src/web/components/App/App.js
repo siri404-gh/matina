@@ -16,6 +16,9 @@ class App extends Component {
     this.setState({ activeTab: value });
     this.props.history.push(`/${value}`);
   }
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
+  }
   render() {
     const { classes, children } = this.props;
 

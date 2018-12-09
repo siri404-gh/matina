@@ -8,7 +8,7 @@ export default theme => ({
     padding: 0,
   },
   listItem: {
-    padding: 5,
+    padding: 8,
     paddingLeft: 25,
   },
   listItemText: {

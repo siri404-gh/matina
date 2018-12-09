@@ -47,7 +47,7 @@ const renderers = {
   paragraph: withStyles(styles)(({ classes, tight, ordered, ...props }) => <Typography {...props} paragraph className={classes.paragraph} />),
 };
 
-export default props => <div style={{ paddingBottom: 40 }} >
+export default props => <div>
     <ReactMarkdown renderers={renderers} {...props} />
   </div>
 ;

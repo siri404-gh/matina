@@ -14,7 +14,7 @@ const styles = {
     position: 'fixed',
     bottom: 0,
     zIndex: 2,
-    background: '#f1f1f1',
+    borderTop: 'solid 1px #f1f1f1',
   },
 };
 

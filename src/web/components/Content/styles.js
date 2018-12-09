@@ -6,11 +6,12 @@ export default theme => ({
     paddingTop: theme.spacing.unit,
     paddingBottom: theme.spacing.unit * 2,
     wordBreak: 'break-word',
+    marginBottom: 60,
   },
   content: {
     flexGrow: 1,
     backgroundColor: theme.background.primary,
-    padding: 0,
+    padding: 10,
   },
   toolbar: {
     minHeight: 48,

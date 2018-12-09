@@ -11,7 +11,7 @@ export default createMuiTheme({
     primary: '#e8eaed',
   },
   typography: {
-    fontSize: 13,
+    fontSize: 12,
     fontFamily: '\'Ubuntu\', sans-serif',
     fontWeightLight: 300,
     fontWeightRegular: 400,

@@ -9,6 +9,11 @@ import { NavLink } from 'react-router-dom';
 import styles from './styles';
 
 class Sidebar extends React.Component {
+  componentDidUpdate(prevProps) {
+    const { post : prevPost } = prevProps;
+    const { post } = this.props;
+    if(post !== prevPost) this.props.handleDrawerToggle();
+  }
   render() {
     const { classes, theme, topics } = this.props;
 

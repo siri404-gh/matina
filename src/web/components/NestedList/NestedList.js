@@ -10,44 +10,22 @@ import Divider from '@material-ui/core/Divider';
 import { NavLink } from 'react-router-dom';
 import styles from './styles';
 
-/**
- *
- *
- * @class NestedList
- * @extends {React.Component}
- */
 class NestedList extends React.Component {
   state = {
     open: false,
   };
 
-  /**
-   *
-   *
-   * @memberof NestedList
-   */
   componentDidMount() {
     const { open } = this.props;
     if (open) this.setState(state => ({ open: !state.open }));
   }
 
-  /**
-   *
-   *
-   * @memberof NestedList
-   */
   handleClick() {
     this.setState(state => ({ open: !state.open }));
   }
 
-  /**
-   *
-   *
-   * @return {Component}
-   * @memberof NestedList
-   */
   render() {
-    const { classes, currentPost } = this.props;
+    const { classes } = this.props;
     return (
       <List component="nav" className={classes.list}>
         <ListItem className={classes.listItem} button onClick={() => this.handleClick()}>
@@ -57,8 +35,7 @@ class NestedList extends React.Component {
         <Collapse in={this.state.open} timeout="auto" unmountOnExit>
           <List component="div" className={classes.nestedList} disablePadding>
             {this.props.links.map((link, i) => {
-              const innerLinkClasses = link.route.split('/')[3] === currentPost ? classes.activeListItem : classes.nestedListItem;
-              return <ListItem key={i} component={NavLink} className={innerLinkClasses} to={link.route}>
+              return <ListItem key={i} component={NavLink} className={classes.nestedListItem} to={link.route}>
                 <ListItemText secondary={link.topic} className={classes.nestedListItemText}/>
               </ListItem>;
             })}

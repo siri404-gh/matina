@@ -1,7 +1,7 @@
 module.exports = [
   {
     topic: 'Javascript Concepts',
-    route: [{
+    route: [ {
       topic: 'Closures in Javascript',
       route: '/post/javascript-concepts/closures',
     },
@@ -16,12 +16,12 @@ module.exports = [
     {
       topic: 'Async/Await',
       route: '/post/javascript-concepts/async-await',
-    }],
+    } ],
   },
   {
     topic: 'Development Environment',
     description: 'Setting up of project',
-    route: [{
+    route: [ {
       topic: 'System requirements',
       route: '/post/development-environment/system-requirements',
     },
@@ -44,7 +44,7 @@ module.exports = [
     {
       topic: 'Browser extensions',
       route: '/post/development-environment/browser-extensions',
-    }],
+    } ],
   },
   {
     topic: 'Initial Setup',
@@ -60,11 +60,11 @@ module.exports = [
       {
         topic: 'Configure Eslint',
         route: '/post/initial-setup/eslint-config',
-      }],
+      } ],
   },
   {
     topic: 'React view layer',
-    route: [{
+    route: [ {
       topic: 'Create entry point',
       route: '/post/react/entry-point',
     },
@@ -83,11 +83,11 @@ module.exports = [
     {
       topic: 'React Native',
       route: '/post/react/react-native',
-    }],
+    } ],
   },
   {
     topic: 'Webpack Configurations', // 'Polyfills',
-    route: [{
+    route: [ {
       topic: 'Development config',
       route: '/post/webpack/dev-config',
     },
@@ -126,11 +126,11 @@ module.exports = [
     {
       topic: 'Clean Webpack Plugin',
       route: '/post/webpack/clean-webpack-plugin',
-    }],
+    } ],
   },
   {
     topic: 'Redux data layer',
-    route: [{
+    route: [ {
       topic: 'What is Redux?',
       route: '/post/redux/what-is-redux',
     },
@@ -141,18 +141,18 @@ module.exports = [
     {
       topic: 'Redux middlewares',
       route: '/post/redux/redux-middlewares',
-    }],
+    } ],
   },
   {
     topic: 'Documentation',
-    route: [{
+    route: [ {
       topic: 'JSdoc',
       route: '/post/documentation/jsdoc',
     },
     {
       topic: 'React styleguidist',
       route: '/post/documentation/react-styleguidist',
-    }],
+    } ],
   },
   {
     topic: 'Git',
@@ -172,7 +172,7 @@ module.exports = [
       {
         topic: 'Rebase vs Merge',
         route: '/post/git/rebase-vs-merge',
-      }],
+      } ],
   },
   {
     topic: 'Optimising code',
@@ -218,26 +218,22 @@ module.exports = [
   },
   {
     topic: 'Unit Testing',
-    route: [{
+    route: [ {
       topic: 'Integrating Karma + Jasmine',
       route: '/post/unit-testing/karma-jasmine',
-    }], // ['Enzyme', 'Sinon, Spy'],
+    } ], // ['Enzyme', 'Sinon, Spy'],
   },
   {
     topic: 'Cross Browser Testing',
-    route: [{
+    route: [ {
       topic: 'Browserstack Tests',
       route: '/post/cross-browser-testing/browserstack-tests',
     },
     {
       topic: 'Saucelabs Tests',
       route: '/post/cross-browser-testing/saucelabs-tests',
-    }],
+    } ],
   },
-  // {
-  //   topic: 'Code Coverage',
-  //   route: [], // ['Sonar analysis', 'Code Climate', 'Codecov', 'Codacy'],
-  // },
   {
     topic: 'Progressive Web Apps',
     route: [
@@ -253,10 +249,10 @@ module.exports = [
   },
   {
     topic: 'Backend',
-    route: [{
+    route: [ {
       topic: 'Configure Express Server',
       route: '/post/backend/express',
-    }], // ['Express', 'Serverside Rendering'],
+    } ], // ['Express', 'Serverside Rendering'],
   },
   {
     topic: 'Continous Integration',
@@ -272,7 +268,7 @@ module.exports = [
     ],
   },
   {
-    topic: 'Continous Deployment', // ['Heroku Node App', 'Heroku docker container', 'Heroku pipelines', 'Firebase Hosting', 'Firebase functions'],
+    topic: 'Continous Deployment',
     route: [
       {
         topic: 'Deploy to Heroku',

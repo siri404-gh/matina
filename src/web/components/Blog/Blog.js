@@ -29,7 +29,7 @@ class Gallery extends Component {
       <Sidebar
         mobileOpen={this.state.mobileOpen}
         handleDrawerToggle={this.handleDrawerToggle.bind(this)}
-        topics={topics}/>
+        topics={topics} topic={topic} post={post}/>
       <Content topic={topic} post={post}/>
     </div>;
   }

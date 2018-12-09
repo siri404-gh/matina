@@ -24,7 +24,7 @@ class PaperSheet extends React.Component {
   }
 
   getPost() {
-    const { classes, topic = 'topic', post = 'post-name' } = this.props;
+    const { classes, topic = 'javascript-concepts', post = 'closures' } = this.props;
     const content = require(`../../posts/${topic}/${post}.md`);
     return <Markdown className={classes.markdown} key={Math.random()}>
       {content || null}
