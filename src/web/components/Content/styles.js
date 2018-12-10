@@ -16,9 +16,6 @@ export default theme => ({
   toolbar: {
     minHeight: 48,
   },
-  markdown: {
-    padding: `${theme.spacing.unit * 0}px 0`,
-  },
   contentLeft: {
     // paddingRight: 15,
     color: 'green',
