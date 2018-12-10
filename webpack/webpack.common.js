@@ -9,7 +9,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ManifestPlugin = require('webpack-manifest-plugin');
 const optimization = require('./optimization');
 
-const { navbar: { title, tagline }, seo: { keywords, ogImage, ogImageAlt, ogUrl, ogTitle, ogDescription, ogType, ogFbAppId, themeColor, sitemap, canonicalUrl }, adsensePubId, googleSearchbarId, dist, manifest: { seed } } = require('../config/variables');
+const { navbar: { title, tagline }, seo: { keywords, ogImage, ogImageAlt, ogUrl, ogTitle, ogDescription, ogType, ogFbAppId, themeColor, sitemap, canonicalUrl }, adsensePubId, googleSearchbarId, googleAnalyticsId, dist, manifest: { seed } } = require('../config/variables');
 
 module.exports = {
   entry: {
@@ -52,6 +52,7 @@ module.exports = {
       themeColor,
       adsensePubId,
       googleSearchbarId,
+      googleAnalyticsId,
       template: path.resolve(__dirname, 'template/template.amp.ejs'),
     }),
     new HtmlWebpackPlugin({
