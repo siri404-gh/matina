@@ -14,7 +14,9 @@
     "build:firebase:stage": "webpack --env=prod --config=webpack/webpack.config.js",
     "build:firebase:prod": "webpack --env=firebase-prod --config=webpack/webpack.config.js",
     "firebase:deploy:staging": "cd functions && npm i && cd .. && firebase use staging && firebase deploy --token $FIREBASE_TOKEN",
-    "firebase:deploy:prod": "cd functions && npm i && cd .. && firebase use production && firebase deploy --token $FIREBASE_TOKEN"
+    "firebase:deploy:prod": "cd functions && npm i && cd .. && firebase use production && firebase deploy --token $FIREBASE_TOKEN",
+    "stage": "source ./.env/sreeram.sh && npm run build:firebase:stage && npm run firebase:deploy:staging",
+    "prod": "source ./.env/sreeram.sh && npm run build:firebase:prod && npm run firebase:deploy:prod"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",
