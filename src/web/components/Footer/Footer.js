@@ -36,7 +36,6 @@ class LabelBottomNavigation extends React.Component {
         <BottomNavigationAction label="About me" value="about" icon={<FaceIcon />} />
         <BottomNavigationAction label="Travelogue" value="gallery" icon={<PhotoLibraryIcon />} />
         <BottomNavigationAction label="Blog" value="blog" icon={<WebIcon />} />
-        <BottomNavigationAction label="Luckmeter" value="luckmeter" icon={<GamesIcon />} />
       </BottomNavigation>
     );
   }
