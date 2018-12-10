@@ -13,12 +13,6 @@ import Tab from '@material-ui/core/Tab';
 import Hidden from '@material-ui/core/Hidden';
 import styles from './styles';
 
-/**
- *
- *
- * @class Navbar
- * @extends {React.Component}
- */
 class Navbar extends React.Component {
   state = {
     auth: false,
@@ -26,57 +20,33 @@ class Navbar extends React.Component {
     value: 0,
   };
 
-  /**
-   *
-   *
-   * @param {*} event
-   * @memberof Navbar
-   */
   handleMenu(event) {
     this.setState({ anchorEl: event.currentTarget });
   }
 
-  /**
-   *
-   *
-   * @param {*} event
-   * @param {*} value
-   * @memberof Navbar
-   */
   handleChange(event, value) {
     this.setState({ value });
   }
 
-  /**
-   *
-   *
-   * @memberof Navbar
-   */
   handleClose() {
     this.setState({ anchorEl: null });
   }
 
-  /**
-   *
-   *
-   * @return {Component}
-   * @memberof Navbar
-   */
   render() {
-    const { classes, title = '', tagline = '' } = this.props;
+    const { classes, title = '', tagline = '', hideMenu = false } = this.props;
     // const { auth, anchorEl } = this.state;
     // const open = Boolean(anchorEl);
 
     return (
       <AppBar id="bp-navbar" className={classes.appBar}>
         <Toolbar className={classes.toolBar}>
-          <IconButton
+          {!hideMenu && <IconButton
             color="inherit"
             aria-label="Open drawer"
             onClick={this.props.handleDrawerToggle}
             className={classes.navIconHide}>
             <MenuIcon className={classes.menuIcon} />
-          </IconButton>
+          </IconButton>}
           <Typography variant="title" color="textSecondary" className={classes.flex} noWrap>
             {title}
           </Typography>
