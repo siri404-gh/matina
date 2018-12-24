@@ -18,17 +18,5 @@
 - [ ] Analytics
 - [ ] Search
 - [x] Open Graph
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+
+Tested using ![alt text](https://raw.githubusercontent.com/sreerampr/desktop-app/ft-sreeram/src/web/assets/Browserstack-logo.png)
