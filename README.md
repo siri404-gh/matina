@@ -20,3 +20,13 @@
 - [x] Open Graph
 
 Tested using ![alt text](https://raw.githubusercontent.com/sreerampr/desktop-app/ft-sreeram/src/web/assets/Browserstack-logo.png)
+
+Things to edit
+
+env variables
+npm scripts
+create git project
+configure remote
+create log rocket
+create air brake
+configure env vars in circle ci

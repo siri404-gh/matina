@@ -1,5 +1,5 @@
-const title = 'L\'œuvre de Romy';
-const shortName = 'Romy';
+const title = 'Tina\'s travels';
+const shortName = 'Tina';
 const tagline = '👨🏻‍💻 Web Artist | 📸 Photographer | 💼 Solo Traveller | 👨🏼‍🍳 Chef';
 const description = tagline;
 const keywords = 'sreeram, padmanabhan, web, developer, website, solo, travel, photography, cooking';

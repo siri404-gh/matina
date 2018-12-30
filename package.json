@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --env=prod --config=webpack/webpack.config.js",
     "build:dev": "webpack --env=dev --config=webpack/webpack.config.js",
-    "build:devserver": "source ./.env/romy.sh && webpack-dev-server --env=dev --config=webpack/webpack.config.js",
+    "build:devserver": "source ./.env/matina.sh && webpack-dev-server --env=dev --config=webpack/webpack.config.js",
     "lint": "eslint src/*",
     "server:start": "nodemon server/",
     "electron:start": "electron _dist/electron.js",
@@ -15,8 +15,8 @@
     "build:firebase:prod": "webpack --env=firebase-prod --config=webpack/webpack.config.js",
     "firebase:deploy:staging": "firebase use staging && firebase deploy --token $FIREBASE_TOKEN --only hosting",
     "firebase:deploy:prod": "cd functions && npm i && cd .. && firebase use production && firebase deploy --token $FIREBASE_TOKEN --only hosting",
-    "stage": "source ./.env/romy.sh && npm run build:firebase:stage && npm run firebase:deploy:staging",
-    "prod": "source ./.env/romy.sh && npm run build:firebase:prod && npm run firebase:deploy:prod"
+    "stage": "source ./.env/matina.sh && npm run build:firebase:stage && npm run firebase:deploy:staging",
+    "prod": "source ./.env/matina.sh && npm run build:firebase:prod && npm run firebase:deploy:prod"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",

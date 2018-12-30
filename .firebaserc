@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "romy-jacquemin",
-    "staging": "romy-jacquemin",
-    "production": "romy-jacquemin"
+    "default": "matina-stathakis",
+    "staging": "matina-stathakis",
+    "production": "matina-stathakis"
   }
 }

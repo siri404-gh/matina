@@ -41,8 +41,8 @@ class FullWidthTabs extends React.Component {
                 src={post.img}
                 alt={post.title}
                 title={post.title}
-                height="640"
-                width="640"
+                height={post.height || "426"}
+                width={post.width || "640"}
                 layout="responsive">
               </amp-img>
               <Markdown

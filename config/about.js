@@ -1,15 +1,12 @@
 export default [
   {
     date: 1546180551000,
-    title: 'À PROPOS',
-    author: 'Romy',
-    img: 'https://static.wixstatic.com/media/165cdd_f6157e097aed46098e1ceb3f89353592~mv2.jpg/v1/fill/w_952,h_916,al_c,q_85,usm_0.66_1.00_0.01/165cdd_f6157e097aed46098e1ceb3f89353592~mv2.webp',
-    post: "\
-Mon nom est Romane Jacquemin, j'ai 24 ans, suis illustratrice et c'est un plaisir d'enfin me dévoiler à vous. \
-\n\n\
-D'aussi loin que je m'en souvienne, j'ai toujours aimé dessiner. Chaque surface plane trouve grâce à mes yeux, et ma curiosité dans le domaine m'a permis d'étendre ma palette et de vous proposer aujourd'hui l'étendue de mon travail. \
-\n\n\
-*Une photo ce n'est que du réel. Un dessin c'est de la réalité, la vôtre, habillée par votre imaginaire, vos fantasmes, votre culture, votre vie.*",
+    title: 'About me',
+    author: 'Matina',
+    img: 'https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/13055054_1097031583672390_3222897304497509148_o.jpg?_nc_cat=106&_nc_eui2=AeHfx2I8cDiJ-HyrE11Cy0rW6yu6WIlOnXH_3U3275flsPPFiAESt3if18NlaAmfZ5Tp1nf4FPz1rM0fUGljPMH1CKa_gxcrMQcE8rp31CCXWw&_nc_ht=scontent-lht6-1.xx&oh=135c5c2432fe364482e560770e212abf&oe=5CC8C05B',
+    post: "I am what you see in YOUrself. ",
     route: '',
+    height: 640,
+    width: 640,
   },
 ];

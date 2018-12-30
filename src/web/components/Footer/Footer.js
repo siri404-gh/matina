@@ -34,8 +34,8 @@ class LabelBottomNavigation extends React.Component {
     const { value } = this.state;
     return (
       <BottomNavigation value={value} onChange={this.handleChange} showLabels className={classes.root}>
-        <BottomNavigationAction label="À Propos" value="about" icon={<FaceIcon />} />
-        <BottomNavigationAction label="Galerie" value="gallery" icon={<PhotoLibraryIcon />} />
+        <BottomNavigationAction label="About" value="about" icon={<FaceIcon />} />
+        <BottomNavigationAction label="Gallery" value="gallery" icon={<PhotoLibraryIcon />} />
       </BottomNavigation>
     );
   }
