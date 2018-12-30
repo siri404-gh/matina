@@ -3,8 +3,7 @@
 export default theme => ({
   root: {
     ...theme.mixins.gutters(),
-    paddingTop: theme.spacing.unit,
-    paddingBottom: theme.spacing.unit * 2,
+    padding: theme.spacing.unit * 2,
     wordBreak: 'break-word',
     marginBottom: 60,
   },

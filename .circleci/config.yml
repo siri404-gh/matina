@@ -17,4 +17,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       # - run: npm run lint
       - run: npm run build:firebase:stage && npm run firebase:deploy:staging
-      - run: npm run build:firebase:prod && npm run firebase:deploy:prod
+      # - run: npm run build:firebase:prod && npm run firebase:deploy:prod

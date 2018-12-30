@@ -15,6 +15,7 @@ const styles = {
     bottom: 0,
     zIndex: 2,
     borderTop: 'solid 1px #f1f1f1',
+    // backgroundColor: '#000000',
   },
 };
 
@@ -33,9 +34,8 @@ class LabelBottomNavigation extends React.Component {
     const { value } = this.state;
     return (
       <BottomNavigation value={value} onChange={this.handleChange} showLabels className={classes.root}>
-        <BottomNavigationAction label="About me" value="about" icon={<FaceIcon />} />
-        <BottomNavigationAction label="Travelogue" value="gallery" icon={<PhotoLibraryIcon />} />
-        <BottomNavigationAction label="Blog" value="blog" icon={<WebIcon />} />
+        <BottomNavigationAction label="À Propos" value="about" icon={<FaceIcon />} />
+        <BottomNavigationAction label="Galerie" value="gallery" icon={<PhotoLibraryIcon />} />
       </BottomNavigation>
     );
   }

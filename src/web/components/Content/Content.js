@@ -10,7 +10,6 @@ class PaperSheet extends React.Component {
 
     return (
       <main className={classes.content}>
-        <div className={classes.toolbar} />
         <Paper className={classes.root} elevation={1}>
           <Grid container spacing={0}>
             <Grid item xs={12}>
